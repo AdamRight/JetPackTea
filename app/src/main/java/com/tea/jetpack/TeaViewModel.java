@@ -1,5 +1,7 @@
 package com.tea.jetpack;
 
+import android.util.Log;
+
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -7,6 +9,8 @@ import androidx.lifecycle.ViewModel;
  * Created by jiangtea on 2020/4/19.
  */
 public class TeaViewModel extends ViewModel {
+
+    //MutableLiveData继承自LiveData,这里也可以使用自定义的TeaLiveData
     private MutableLiveData<Integer> mATeamScore;
     private MutableLiveData<Integer> mBTeamScore;
 
@@ -55,4 +59,9 @@ public class TeaViewModel extends ViewModel {
     }
 
 
+    @Override
+    protected void onCleared() {
+        //super.onCleared();
+        Log.d(MainActivity.Tag,"ViewModel 销毁了，可以在这里做一些数据解绑操作");
+    }
 }
