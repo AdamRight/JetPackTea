@@ -7,14 +7,14 @@
 
         <variable
             name="data"
-            type="com.tea.jetpack.score.TeaViewModel" />
+            type="com.tea.jetpack.scoredemo.TeaViewModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".score.ScoreActivity">
+        tools:context=".scoredemo.ScoreActivity">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"

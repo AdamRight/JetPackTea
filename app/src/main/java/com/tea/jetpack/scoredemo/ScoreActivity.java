@@ -1,4 +1,4 @@
-package com.tea.jetpack.score;
+package com.tea.jetpack.scoredemo;
 
 import android.os.Bundle;
 import android.util.Log;

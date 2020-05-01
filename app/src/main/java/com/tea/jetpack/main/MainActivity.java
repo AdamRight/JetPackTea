@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tea.jetpack.R;
-import com.tea.jetpack.score.ScoreActivity;
+import com.tea.jetpack.databindingdemo.DataBindingActivity;
+import com.tea.jetpack.livedatademo.LiveDataDemoActivity;
+import com.tea.jetpack.scoredemo.ScoreActivity;
+import com.tea.jetpack.viewmodeldemo.ViewModelDemoActivity;
 
 import java.util.ArrayList;
 
@@ -40,7 +43,10 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
     }
 
     private void generateDatas() {
-        mDatas.add(new MainListBean("计分", ScoreActivity.class));
+        mDatas.add(new MainListBean("ViewModel-demo", ViewModelDemoActivity.class));
+        mDatas.add(new MainListBean("LiveData-demo", LiveDataDemoActivity.class));
+        mDatas.add(new MainListBean("DataBinding-demo以及SavedStateHandle", DataBindingActivity.class));
+        mDatas.add(new MainListBean("计分器demo", ScoreActivity.class));
     }
 
     @Override

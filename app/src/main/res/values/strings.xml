@@ -2,6 +2,10 @@
     <string name="app_name">JetPackTea</string>
     <string name="textview1">Team A</string>
     <string name="textview2">Team B</string>
+    <string name="num_view_model_demo" translatable="false">0</string>
+    <string name="btn1_view_model_demo" translatable="false">+1</string>
+    <string name="btn2_view_model_demo" translatable="false">+2</string>
+    <string name="btn3_view_model_demo" translatable="false">-1</string>
     <string name="scoreA" translatable="false">0</string>
     <string name="scoreB" translatable="false">0</string>
     <string name="button1" translatable="false">+1</string>
