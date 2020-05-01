@@ -1,8 +1,9 @@
-package com.tea.jetpack;
+package com.tea.jetpack.score;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -11,21 +12,23 @@ import androidx.lifecycle.LifecycleEventObserver;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.tea.jetpack.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity implements LifecycleEventObserver {
+import com.tea.jetpack.R;
+import com.tea.jetpack.databinding.ActivityScoreBinding;
+
+public class ScoreActivity extends AppCompatActivity implements LifecycleEventObserver {
 
     TeaViewModel teaViewModel;
-    ActivityMainBinding binding;
-    public static String Tag = "MainActivity";
+    ActivityScoreBinding binding;
+    public static String Tag = "ScoreActivity";
     private TeaLiveData mLiveData = new TeaLiveData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getLifecycle().addObserver(this);
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+//        setContentView(R.layout.activity_score);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_score);
 
         // 过时方法
         //teaViewModel = ViewModelProviders.of(this).get(TeaViewModel.class);

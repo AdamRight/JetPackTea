@@ -1,4 +1,4 @@
-package com.tea.jetpack;
+package com.tea.jetpack.score;
 
 import android.util.Log;
 
@@ -11,12 +11,12 @@ public class TeaLiveData extends LiveData<Integer> {
 
     @Override
     protected void onActive() {
-        Log.d(MainActivity.Tag,"LiveData:onActive");
+        Log.d(ScoreActivity.Tag,"LiveData:onActive");
     }
 
     @Override
     protected void onInactive() {
-        Log.d(MainActivity.Tag,"LiveData:onInactive");
+        Log.d(ScoreActivity.Tag,"LiveData:onInactive");
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.tea.jetpack;
+package com.tea.jetpack.score;
 
 import android.util.Log;
 
@@ -62,6 +62,6 @@ public class TeaViewModel extends ViewModel {
     @Override
     protected void onCleared() {
         //super.onCleared();
-        Log.d(MainActivity.Tag,"ViewModel 销毁了，可以在这里做一些数据解绑操作");
+        Log.d(ScoreActivity.Tag,"ViewModel 销毁了，可以在这里做一些数据解绑操作");
     }
 }
