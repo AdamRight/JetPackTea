@@ -31,10 +31,10 @@ public class AddNumFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_add_num, container, false);
-        ViewModelWithNavigation viewModelWithNavigation = new ViewModelProvider(getActivity()).get(ViewModelWithNavigation.class);
+        ViewModelWithNavigation viewModelWithNavigation = new ViewModelProvider(requireActivity()).get(ViewModelWithNavigation.class);
         FragmentAddNumBinding binding = DataBindingUtil.inflate(inflater, R.layout.fragment_add_num, container, false);
         binding.setMydata(viewModelWithNavigation);
-        binding.setLifecycleOwner(getActivity());
+        binding.setLifecycleOwner(requireActivity());
 
         binding.button17.setOnClickListener(new View.OnClickListener() {
             @Override

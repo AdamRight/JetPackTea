@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/count_num_nav"
+    android:label="欢迎"
+    app:startDestination="@id/countTitleFragment">
+
+    <fragment
+        android:id="@+id/countTitleFragment"
+        android:name="com.tea.jetpack.countdemo.CountTitleFragment"
+        android:label="欢迎"
+        tools:layout="@layout/fragment_count_title">
+        <action
+            android:id="@+id/action_countTitleFragment_to_countQuestionFragment"
+            app:destination="@id/countQuestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countQuestionFragment"
+        android:name="com.tea.jetpack.countdemo.CountQuestionFragment"
+        android:label="答题"
+        tools:layout="@layout/fragment_count_question">
+        <action
+            android:id="@+id/action_countQuestionFragment_to_countWinFragment"
+            app:destination="@id/countWinFragment" />
+        <action
+            android:id="@+id/action_countQuestionFragment_to_countLoseFragment"
+            app:destination="@id/countLoseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countWinFragment"
+        android:name="com.tea.jetpack.countdemo.CountWinFragment"
+        android:label="成功"
+        tools:layout="@layout/fragment_count_win">
+        <action
+            android:id="@+id/action_countWinFragment_to_countTitleFragment"
+            app:destination="@id/countTitleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countLoseFragment"
+        android:name="com.tea.jetpack.countdemo.CountLoseFragment"
+        android:label="失败"
+        tools:layout="@layout/fragment_count_lose">
+        <action
+            android:id="@+id/action_countLoseFragment_to_countTitleFragment"
+            app:destination="@id/countTitleFragment" />
+    </fragment>
+</navigation>

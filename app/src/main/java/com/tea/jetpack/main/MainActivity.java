@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tea.jetpack.R;
+import com.tea.jetpack.countdemo.CountNumActivity;
 import com.tea.jetpack.databindingdemo.DataBindingActivity;
 import com.tea.jetpack.livedatademo.LiveDataDemoActivity;
 import com.tea.jetpack.navigationdemo.NavigationTeaActivity;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
         mDatas.add(new MainListBean("计分器demo", ScoreActivity.class));
         mDatas.add(new MainListBean("Navigation-fragment切换和数据传递", NavigationTeaActivity.class));
         mDatas.add(new MainListBean("Navigation-viewmodel", NumFragmentActivity.class));
+        mDatas.add(new MainListBean("口算demo", CountNumActivity.class));
     }
 
     @Override

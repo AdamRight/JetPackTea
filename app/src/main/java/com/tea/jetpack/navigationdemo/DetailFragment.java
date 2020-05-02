@@ -37,7 +37,7 @@ public class DetailFragment extends Fragment {
 
         //接收数据
         String fragment_key = getArguments().getString("fragment_key");
-        Toast.makeText(getActivity(),fragment_key,Toast.LENGTH_SHORT).show();
+        Toast.makeText(requireActivity(),fragment_key,Toast.LENGTH_SHORT).show();
 
         getView().findViewById(R.id.button13).setOnClickListener(
                 Navigation.createNavigateOnClickListener(R.id.action_detailFragment_to_homeFragment)

@@ -1,4 +1,4 @@
-package com.tea.jetpack.navogationdemo2;
+package com.tea.jetpack.countdemo;
 
 
 import android.os.Bundle;
@@ -13,15 +13,15 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.tea.jetpack.R;
-import com.tea.jetpack.databinding.FragmentDeleteNumBinding;
+import com.tea.jetpack.databinding.FragmentCountLoseBinding;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DeleteNumFragment extends Fragment {
+public class CountLoseFragment extends Fragment {
 
 
-    public DeleteNumFragment() {
+    public CountLoseFragment() {
         // Required empty public constructor
     }
 
@@ -30,23 +30,19 @@ public class DeleteNumFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_delete_num, container, false);
-
-
-        ViewModelWithNavigation viewModelWithNavigation = new ViewModelProvider(requireActivity()).get(ViewModelWithNavigation.class);
-        FragmentDeleteNumBinding binding = DataBindingUtil.inflate(inflater, R.layout.fragment_delete_num, container, false);
-        binding.setMydata(viewModelWithNavigation);
-        binding.setLifecycleOwner(requireActivity());
-
-        binding.button16.setOnClickListener(new View.OnClickListener() {
+        //return inflater.inflate(R.layout.fragment_count_lose, container, false);
+        CountViewModel countViewModel = new ViewModelProvider(requireActivity()).get(CountViewModel.class);
+        FragmentCountLoseBinding loseBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_count_lose,container,false);
+        loseBinding.setLoseData(countViewModel);
+        loseBinding.setLifecycleOwner(requireActivity());
+        loseBinding.button19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavController navController = Navigation.findNavController(view);
-                navController.navigate(R.id.action_deleteNumFragment_to_addNumFragment);
+                navController.navigate(R.id.action_countLoseFragment_to_countTitleFragment);
             }
         });
-
-        return binding.getRoot();
+        return loseBinding.getRoot();
     }
 
 }
