@@ -36,7 +36,11 @@
         <activity
             android:name=".navigationdemo.NavigationTeaActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".countdemo.CountNumActivity"
+        <activity
+            android:name=".countdemo.CountNumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lifecyclesdemo.LifecyclesDemoActivity"
             android:screenOrientation="portrait" />
 
     </application>
