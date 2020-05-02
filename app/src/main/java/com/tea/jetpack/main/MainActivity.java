@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.tea.jetpack.R;
 import com.tea.jetpack.databindingdemo.DataBindingActivity;
 import com.tea.jetpack.livedatademo.LiveDataDemoActivity;
+import com.tea.jetpack.navigationdemo.NavigationTeaActivity;
+import com.tea.jetpack.navogationdemo2.NumFragmentActivity;
 import com.tea.jetpack.scoredemo.ScoreActivity;
 import com.tea.jetpack.viewmodeldemo.ViewModelDemoActivity;
 
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
         mDatas.add(new MainListBean("LiveData-demo", LiveDataDemoActivity.class));
         mDatas.add(new MainListBean("DataBinding-demo以及SavedStateHandle", DataBindingActivity.class));
         mDatas.add(new MainListBean("计分器demo", ScoreActivity.class));
+        mDatas.add(new MainListBean("Navigation-fragment切换和数据传递", NavigationTeaActivity.class));
+        mDatas.add(new MainListBean("Navigation-viewmodel", NumFragmentActivity.class));
     }
 
     @Override

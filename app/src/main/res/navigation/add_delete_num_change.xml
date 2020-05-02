@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_delete_num_change"
+    app:startDestination="@id/addNumFragment">
+
+    <fragment
+        android:id="@+id/addNumFragment"
+        android:name="com.tea.jetpack.navogationdemo2.AddNumFragment"
+        android:label="fragment_add_num"
+        tools:layout="@layout/fragment_add_num" >
+        <action
+            android:id="@+id/action_addNumFragment_to_deleteNumFragment"
+            app:destination="@id/deleteNumFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteNumFragment"
+        android:name="com.tea.jetpack.navogationdemo2.DeleteNumFragment"
+        android:label="fragment_delete_num"
+        tools:layout="@layout/fragment_delete_num" >
+        <action
+            android:id="@+id/action_deleteNumFragment_to_addNumFragment"
+            app:destination="@id/addNumFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popUpTo="@+id/addNumFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

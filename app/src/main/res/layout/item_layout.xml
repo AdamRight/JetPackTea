@@ -19,7 +19,7 @@
         app:contentPadding="8dp">
 
         <TextView
-            android:textColor="@color/bg_orange_ff7e2a"
+            android:textColor="@color/colorPrimary"
             android:id="@+id/item_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -30,6 +30,13 @@
         <activity
             android:name=".livedatademo.LiveDataDemoActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".navogationdemo2.NumFragmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".navigationdemo.NavigationTeaActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
