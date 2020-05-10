@@ -1,4 +1,4 @@
-package com.tea.jetpack.navogationdemo2;
+package com.tea.jetpack.navigationdemo2;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

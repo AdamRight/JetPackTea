@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/addNumFragment"
-        android:name="com.tea.jetpack.navogationdemo2.AddNumFragment"
+        android:name="com.tea.jetpack.navigationdemo2.AddNumFragment"
         android:label="fragment_add_num"
         tools:layout="@layout/fragment_add_num" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/deleteNumFragment"
-        android:name="com.tea.jetpack.navogationdemo2.DeleteNumFragment"
+        android:name="com.tea.jetpack.navigationdemo2.DeleteNumFragment"
         android:label="fragment_delete_num"
         tools:layout="@layout/fragment_delete_num" >
         <action

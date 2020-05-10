@@ -6,13 +6,13 @@
     <data>
         <variable
             name="mydata"
-            type="com.tea.jetpack.navogationdemo2.ViewModelWithNavigation" />
+            type="com.tea.jetpack.navigationdemo2.ViewModelWithNavigation" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".navogationdemo2.AddNumFragment">
+        tools:context=".navigationdemo2.AddNumFragment">
 
 
         <TextView
