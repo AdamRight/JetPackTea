@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
         mDatas.add(new MainListBean("Navigation-viewmodel", NumFragmentActivity.class));
         mDatas.add(new MainListBean("口算demo", CountNumActivity.class));
         mDatas.add(new MainListBean("Lifecycles-demo", LifecyclesDemoActivity.class));
-        mDatas.add(new MainListBean("room-demo", RoomDemo1Activity.class));
+        mDatas.add(new MainListBean("room-demo-基本使用", RoomDemo1Activity.class));
     }
 
     @Override

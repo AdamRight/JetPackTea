@@ -1,5 +1,7 @@
 package com.tea.jetpack.roomdemo;
 
+import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -10,6 +12,7 @@ import java.util.List;
 /**
  * Created by jiangtea on 2020/5/3.
  */
+@Dao
 public interface WordDao {
     @Insert
     void insertWords(Word...words);
@@ -24,5 +27,6 @@ public interface WordDao {
     void deleteAllWords();
 
     @Query("SELECT * FROM WORD ORDER BY ID DESC")
-    List<Word> getAllWords();
+    //List<Word> getAllWords();
+    LiveData<List<Word>> getAllWords();
 }
