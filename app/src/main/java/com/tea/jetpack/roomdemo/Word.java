@@ -17,6 +17,9 @@ public class Word {
     @ColumnInfo(name = "chinese_meaning")
     private String meaning;
 
+    @ColumnInfo(name = "bar_data")
+    private boolean bar;
+
     public Word(String word, String meaning) {
         this.word = word;
         this.meaning = meaning;
@@ -44,5 +47,13 @@ public class Word {
 
     public void setMeaning(String meaning) {
         this.meaning = meaning;
+    }
+
+    public boolean isBar() {
+        return bar;
+    }
+
+    public void setBar(boolean bar) {
+        this.bar = bar;
     }
 }
