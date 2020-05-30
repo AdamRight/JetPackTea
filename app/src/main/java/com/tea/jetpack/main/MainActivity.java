@@ -16,6 +16,7 @@ import com.tea.jetpack.livedatademo.LiveDataDemoActivity;
 import com.tea.jetpack.navigationdemo.NavigationTeaActivity;
 import com.tea.jetpack.navigationdemo2.NumFragmentActivity;
 import com.tea.jetpack.roomdemo.RoomDemo1Activity;
+import com.tea.jetpack.roomdemo2.RoomDemo2Activity;
 import com.tea.jetpack.scoredemo.ScoreActivity;
 import com.tea.jetpack.viewmodeldemo.ViewModelDemoActivity;
 
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
         mDatas.add(new MainListBean("口算demo", CountNumActivity.class));
         mDatas.add(new MainListBean("Lifecycles-demo", LifecyclesDemoActivity.class));
         mDatas.add(new MainListBean("room-demo-基本使用", RoomDemo1Activity.class));
+        mDatas.add(new MainListBean("room-demo-词汇记录", RoomDemo2Activity.class));
     }
 
     @Override

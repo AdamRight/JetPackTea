@@ -20,4 +20,7 @@
     <string name="welcome_to_use">口算测试</string>
     <string name="enter_count">开始</string>
     <string name="continue_answer">回答正确！请继续答题！</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

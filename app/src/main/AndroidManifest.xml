@@ -42,9 +42,12 @@
         <activity
             android:name=".lifecyclesdemo.LifecyclesDemoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".roomdemo.RoomDemo1Activity"
-            android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".roomdemo.RoomDemo1Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".roomdemo2.RoomDemo2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
     </application>
 
 </manifest>
