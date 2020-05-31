@@ -25,12 +25,14 @@ public class WordViewModel extends AndroidViewModel {
     void updateWords(Word... words) {
         wordRepository.updateWords(words);
     }
-    void deleteWords(Word... words) {
+    public void deleteWords(Word... words) {
         wordRepository.deleteWords(words);
     }
-    void deleteAllWords() {
+    public void deleteAllWords() {
         wordRepository.deleteAllWords();
     }
 
-
+    public LiveData<List<Word>> findWordsWithPattern(String patten) {
+        return wordRepository.findWordsWithPattern(patten);
+    }
 }

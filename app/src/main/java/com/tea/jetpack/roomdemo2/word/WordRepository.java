@@ -33,6 +33,10 @@ class WordRepository {
         new DeleteAllAsyncTask(wordDao).execute();
     }
 
+    LiveData<List<Word>> findWordsWithPattern(String pattern) {
+        return wordDao.findWordsWithPattern("%" + pattern + "%");
+    }
+
 
     LiveData<List<Word>> getAllWordsLive() {
         return allWordsLive;
